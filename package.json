@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "SignBit Studio Gamey MonoRepo",
   "main": "index.ts",
-  "scripts": {
-    "dev": "bun run index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "license": "GPL-2.0-only",
   "dependencies": {
     "@signbit/dice": "workspace:*",
@@ -17,6 +13,10 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun run index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [
     "packages/*"
