@@ -1,0 +1,16 @@
+{
+  "name": "@signbit/gamey",
+  "version": "1.0.0",
+  "description": "SignBit Studio Gamey MonoRepo",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "GPL-2.0-only",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
