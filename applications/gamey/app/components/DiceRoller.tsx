@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useCallback, useMemo } from 'react';
-import { Dice } from '@signbit/dice';
+import { Die } from '@signbit/dice';
 
 const DiceRoller = () => {
-  const dice = useMemo(
+  const die = useMemo(
     () =>
-      new Dice({
+      new Die({
         sides: 20,
       }),
     []
@@ -15,8 +15,8 @@ const DiceRoller = () => {
   const [currentRoll, setCurrentRoll] = useState<number | null>(null);
 
   const roll = useCallback(() => {
-    setCurrentRoll(dice.roll());
-  }, [dice, setCurrentRoll]);
+    setCurrentRoll(die.roll());
+  }, [die, setCurrentRoll]);
 
   return (
     <section className='h-52 w-52 border-2 border-solid border-gray-800 text-gray-700 flex flex-col items-center justify-center'>

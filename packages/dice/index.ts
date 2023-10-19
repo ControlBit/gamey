@@ -1,3 +1,3 @@
-import Dice from './src/Dice';
+import Die from './src/Die';
 
-export { Dice };
+export { Die };
