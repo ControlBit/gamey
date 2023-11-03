@@ -6,9 +6,11 @@
   "license": "GPL-2.0-only",
   "dependencies": {
     "@signbit/dice": "workspace:*",
+    "@signbit/ui-components": "workspace:*",
     "vitest": "^0.34.6"
   },
   "devDependencies": {
+    "@types/web": "^0.0.119",
     "bun-types": "latest"
   },
   "peerDependencies": {

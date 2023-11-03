@@ -3,6 +3,8 @@
 import { useState, useCallback, useMemo } from 'react';
 import { Die } from '@signbit/dice';
 
+import { Button } from '@signbit/ui-components/src/components/button/base/index';
+
 const DiceRoller = () => {
   const die = useMemo(
     () =>
@@ -23,6 +25,8 @@ const DiceRoller = () => {
       <h1 className='text-lg'>Dice Roller</h1>
 
       <ResultText currentRoll={currentRoll} />
+
+      <Button />
 
       <button
         className='py-2 px-8 border border-gray-800 rounded hover:bg-gray-200 active:bg-gray-300'
