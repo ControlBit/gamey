@@ -1,7 +1,7 @@
-import { Dice } from '@signbit/dice';
+import { Die } from '@signbit/dice';
 
-const dice = new Dice({
+const die = new Die({
   sides: 20,
 });
 
-console.log('dice::roll', dice.roll());
+console.log('die::roll', die.roll());
