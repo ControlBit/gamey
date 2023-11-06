@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from './index';
-import type { ButtonProps } from './index';
+import { Button, type ButtonProps } from './button';
 
 const meta = {
   title: 'Components / Button',
@@ -38,6 +37,13 @@ export const Danger: Story = {
   args: {
     children: 'Danger Button',
     variant: 'danger',
+  },
+};
+
+export const Small: Story = {
+  args: {
+    children: 'Small Button',
+    size: 'small',
   },
 };
 

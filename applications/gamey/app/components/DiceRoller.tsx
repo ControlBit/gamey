@@ -3,7 +3,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import { Die } from '@signbit/dice';
 
-import { Button } from '@signbit/ui-components/src/components/button/base/index';
+import { Button } from '@signbit/ui-components/src/components/button';
 
 import styles from './DiceRoller.module.scss';
 

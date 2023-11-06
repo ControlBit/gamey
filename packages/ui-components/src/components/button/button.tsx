@@ -1,11 +1,12 @@
-import { joinClassNames } from '../../../helpers/joinClassNames';
+import { joinClassNames } from '../../helpers/joinClassNames';
 
-import styles from './index.module.scss';
+import styles from './button.module.scss';
 
 interface ButtonProps {
   className?: string;
 
   variant?: 'primary' | 'secondary' | 'danger';
+  size?: 'large' | 'small';
 
   children: React.ReactNode;
   onClick?: () => void;
@@ -16,6 +17,7 @@ const Button = ({
   className,
 
   variant = 'primary',
+  size = 'large',
 
   children,
   onClick,
@@ -30,6 +32,7 @@ const Button = ({
       }}
       className={joinClassNames(
         styles.Button,
+        styles[`Button--${size}`],
         styles[`Button--${variant}`],
         className
       )}
