@@ -23,27 +23,27 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    label: 'Primary Button',
+    children: 'Primary Button',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    label: 'Secondary Button',
+    children: 'Secondary Button',
     variant: 'secondary',
   },
 };
 
 export const Danger: Story = {
   args: {
-    label: 'Danger Button',
+    children: 'Danger Button',
     variant: 'danger',
   },
 };
 
 export const Disabled: Story = {
   args: {
-    label: 'Disabled Button',
+    children: 'Disabled Button',
     disabled: true,
   },
 };

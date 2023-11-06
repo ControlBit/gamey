@@ -7,7 +7,7 @@ interface ButtonProps {
 
   variant?: 'primary' | 'secondary' | 'danger';
 
-  label: string;
+  children: React.ReactNode;
   onClick?: () => void;
   disabled?: boolean;
 }
@@ -17,7 +17,7 @@ const Button = ({
 
   variant = 'primary',
 
-  label,
+  children,
   onClick,
   disabled = false,
 }: ButtonProps) => {
@@ -35,7 +35,7 @@ const Button = ({
       )}
       disabled={disabled}
     >
-      {label}
+      {children}
     </button>
   );
 };

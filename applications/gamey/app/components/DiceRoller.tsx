@@ -5,6 +5,8 @@ import { Die } from '@signbit/dice';
 
 import { Button } from '@signbit/ui-components/src/components/button/base/index';
 
+import styles from './DiceRoller.module.scss';
+
 const DiceRoller = () => {
   const die = useMemo(
     () =>
@@ -21,12 +23,14 @@ const DiceRoller = () => {
   }, [die, setCurrentRoll]);
 
   return (
-    <section className='h-52 w-52 border-2 border-solid border-gray-800 text-gray-700 flex flex-col items-center justify-center p-4'>
+    <section className={styles.DiceRoller}>
       <h1 className='text-lg'>Dice Roller</h1>
 
       <ResultText currentRoll={currentRoll} />
 
-      <Button label='Roll Die' onClick={roll} />
+      <Button className={styles.RollButton} onClick={roll}>
+        Roll Die
+      </Button>
     </section>
   );
 };

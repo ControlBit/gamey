@@ -1,0 +1,7 @@
+.DiceRoller {
+  @apply h-52 w-52 border-2 border-solid border-gray-800 text-gray-700 flex flex-col items-center justify-center p-4;
+
+  & > .RollButton {
+    @apply w-full;
+  }
+}
