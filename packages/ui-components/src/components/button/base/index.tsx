@@ -1,11 +1,44 @@
+import { joinClassNames } from '../../../helpers/joinClassNames';
+
 import styles from './index.module.scss';
 
-const Button = () => {
+interface ButtonProps {
+  className?: string;
+
+  variant?: 'primary' | 'secondary' | 'danger';
+
+  label: string;
+  onClick?: () => void;
+  disabled?: boolean;
+}
+
+const Button = ({
+  className,
+
+  variant = 'primary',
+
+  label,
+  onClick,
+  disabled = false,
+}: ButtonProps) => {
   return (
-    <button className='bg-red-300 p-4 rounded-2xl'>
-      <p className={styles.ButtonBase}>Button</p>
+    <button
+      onClick={() => {
+        if (typeof onClick === 'function') {
+          onClick();
+        }
+      }}
+      className={joinClassNames(
+        styles.Button,
+        styles[`Button--${variant}`],
+        className
+      )}
+      disabled={disabled}
+    >
+      {label}
     </button>
   );
 };
 
+export type { ButtonProps };
 export { Button };

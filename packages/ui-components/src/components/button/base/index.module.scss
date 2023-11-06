@@ -1,3 +1,24 @@
-.ButtonBase {
-  @apply text-blue-700;
+.Button {
+  @apply w-max max-w-full p-4 rounded-2xl outline-1 outline-offset-2 text-white;
+
+  &--primary {
+    @apply bg-green hover:bg-green-700 active:bg-green-800 outline-green;
+  }
+
+  &--secondary {
+    @apply bg-blue hover:bg-blue-700 active:bg-blue-800 outline-blue;
+  }
+
+  &--danger {
+    @apply bg-red hover:bg-red-700 active:bg-red-800 outline-red;
+  }
+
+  &:disabled {
+    @apply bg-gray-100 text-gray-300 cursor-not-allowed;
+
+    &:hover,
+    &:active {
+      @apply bg-gray-100 text-gray-300;
+    }
+  }
 }

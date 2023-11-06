@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss';
 
+import { lightTheme } from '@signbit/ui-components/src/assets/theme';
+
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,6 +13,7 @@ const config: Config = {
   ],
   theme: {
     extend: {},
+    ...lightTheme,
   },
   plugins: [],
 };

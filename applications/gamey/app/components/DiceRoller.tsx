@@ -21,19 +21,12 @@ const DiceRoller = () => {
   }, [die, setCurrentRoll]);
 
   return (
-    <section className='h-52 w-52 border-2 border-solid border-gray-800 text-gray-700 flex flex-col items-center justify-center'>
+    <section className='h-52 w-52 border-2 border-solid border-gray-800 text-gray-700 flex flex-col items-center justify-center p-4'>
       <h1 className='text-lg'>Dice Roller</h1>
 
       <ResultText currentRoll={currentRoll} />
 
-      <Button />
-
-      <button
-        className='py-2 px-8 border border-gray-800 rounded hover:bg-gray-200 active:bg-gray-300'
-        onClick={roll}
-      >
-        Roll
-      </button>
+      <Button label='Roll Die' onClick={roll} />
     </section>
   );
 };
