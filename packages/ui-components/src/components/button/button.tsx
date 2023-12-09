@@ -3,23 +3,23 @@ import { joinClassNames } from '../../helpers/joinClassNames';
 import styles from './button.module.scss';
 
 interface ButtonProps {
+  children: React.ReactNode;
   className?: string;
 
   variant?: 'primary' | 'secondary' | 'danger';
   size?: 'large' | 'small';
 
-  children: React.ReactNode;
   onClick?: () => void;
   disabled?: boolean;
 }
 
 const Button = ({
+  children,
   className,
 
   variant = 'primary',
   size = 'large',
 
-  children,
   onClick,
   disabled = false,
 }: ButtonProps) => {

@@ -61,6 +61,7 @@ const lightTheme = {
       300: '#fec967',
       200: '#fedb67',
       100: '#ffe58f',
+      50: '#fff1c2',
     },
     orange: {
       900: '#642202',
