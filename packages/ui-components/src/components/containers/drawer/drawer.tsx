@@ -115,7 +115,7 @@ interface ItemProps {
   onClick?: (id: string) => void;
 }
 
-const Item = ({ children, id, onClick }: ItemProps) => {
+const Item = ({ id, children, className, onClick }: ItemProps) => {
   const drawerContext = useContext(DrawerContext);
 
   const isActive = drawerContext.activeItem === id;
@@ -136,7 +136,8 @@ const Item = ({ children, id, onClick }: ItemProps) => {
       }}
       className={joinClassNames(
         styles.Item,
-        isActive && styles['Item--active']
+        isActive && styles['Item--active'],
+        className
       )}
       tabIndex={0}
     >

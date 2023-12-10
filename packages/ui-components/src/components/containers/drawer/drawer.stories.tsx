@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Drawer, DrawerProps } from './drawer';
-
-import { Button } from '../../button';
 
 const meta = {
   title: 'Components / Containers / Drawer',
