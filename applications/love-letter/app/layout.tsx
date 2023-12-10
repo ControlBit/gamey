@@ -2,13 +2,11 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import { Header } from './components/header/header';
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Gamey | SignBit Studio',
-  description: 'SignBit Studio Gamey Hub',
+  title: 'Love Letter | SignBit Studio',
+  description: 'SignBit Studio Love Letter',
 };
 
 export default function RootLayout({
@@ -18,11 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <Header />
-
-        <main className='p-4'>{children}</main>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

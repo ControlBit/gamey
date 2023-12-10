@@ -1,19 +1,4 @@
-.Overlay {
-  @apply fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40;
-
-  &--open {
-    @apply flex;
-  }
-
-  &--closed {
-    @apply hidden;
-  }
-}
-
 .Drawer {
-  @apply w-72 h-full flex flex-col;
-  @apply bg-white;
-
   &__OpenIcon,
   &__CloseIcon {
     @apply h-6 w-6 cursor-pointer m-4 outline-green-500;
@@ -24,11 +9,16 @@
   }
 
   &__Content {
-    @apply flex-1 overflow-y-auto;
+    @apply w-72 h-full flex flex-col;
+    @apply bg-white;
+
+    &List {
+      @apply flex-1 overflow-y-auto;
+    }
   }
 }
 
-.Item {
+.DrawerItem {
   @apply cursor-pointer p-4 outline-green-500;
 
   &:hover {
