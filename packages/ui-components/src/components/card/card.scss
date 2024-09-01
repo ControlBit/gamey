@@ -1,0 +1,13 @@
+.Card {
+  @apply relative w-full h-full resize z-0;
+
+  &__Background {
+    @apply absolute z-10;
+
+    @apply fill-yellow;
+  }
+
+  &__Content {
+    @apply w-full h-full flex items-center justify-center relative z-20;
+  }
+}

@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Retro Gaming';
+    font-weight: 400;
+    src: url(/fonts/Retro Gaming.ttf) format('ttf');
+  }
+
+  @font-face {
+    font-family: 'ThemeVCK Text';
+    font-weight: 400;
+    src: url(/fonts/themevck-text.ttf) format('ttf');
+  }
+}

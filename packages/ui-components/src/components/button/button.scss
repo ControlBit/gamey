@@ -1,0 +1,265 @@
+.Button {
+  @apply h-full w-full relative outline-1 outline-offset-4;
+
+  & &__TopBorder {
+    @apply absolute top-1 left-1;
+  }
+
+  & &__Content {
+    @apply h-full w-full flex items-center justify-center font-pixel text-2xl;
+  }
+
+  & &__BottomBorder {
+    @apply absolute bottom-1 right-1;
+  }
+}
+
+// ================================================== //
+// ==================== VARIANTS ==================== //
+// ================================================== //
+
+// ==================== disabled ==================== //
+.Button--disabled.Button {
+  @apply cursor-not-allowed outline-none;
+
+  .Card {
+    .Card__Background {
+      @apply fill-white-600;
+    }
+  }
+
+  .Button {
+    @apply cursor-not-allowed;
+
+    &__TopBorder {
+      @apply fill-white;
+    }
+
+    &__Content {
+      @apply text-white;
+    }
+
+    &__BottomBorder {
+      @apply fill-white-700;
+    }
+  }
+}
+
+// ==================== primary ==================== //
+.Button--primary.Button {
+  @apply outline-yellow;
+
+  .Card {
+    .Card__Background {
+      @apply fill-yellow;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-yellow-400;
+    }
+
+    &__Content {
+      @apply text-yellow-700;
+    }
+
+    &__BottomBorder {
+      @apply fill-yellow-600;
+    }
+  }
+}
+
+.Button--primary:hover.Button {
+  @apply outline-yellow;
+
+  .Card {
+    .Card__Background {
+      @apply fill-yellow-600;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-yellow;
+    }
+
+    &__Content {
+      @apply text-yellow-800;
+    }
+
+    &__BottomBorder {
+      @apply fill-yellow-700;
+    }
+  }
+}
+
+.Button--primary:active.Button {
+  @apply outline-yellow;
+
+  .Card {
+    .Card__Background {
+      @apply fill-yellow-700;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-yellow-600;
+    }
+
+    &__Content {
+      @apply text-yellow-800;
+    }
+
+    &__BottomBorder {
+      @apply fill-yellow-800;
+    }
+  }
+}
+
+// ==================== secondary ==================== //
+.Button--secondary.Button {
+  @apply outline-green;
+
+  .Card {
+    .Card__Background {
+      @apply fill-green;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-green-400;
+    }
+
+    &__Content {
+      @apply text-green-700;
+    }
+
+    &__BottomBorder {
+      @apply fill-green-600;
+    }
+  }
+}
+
+.Button--secondary:hover.Button {
+  @apply outline-green;
+
+  .Card {
+    .Card__Background {
+      @apply fill-green-600;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-green;
+    }
+
+    &__Content {
+      @apply text-green-800;
+    }
+
+    &__BottomBorder {
+      @apply fill-green-700;
+    }
+  }
+}
+
+.Button--secondary:active.Button {
+  @apply outline-green;
+
+  .Card {
+    .Card__Background {
+      @apply fill-green-700;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-green-600;
+    }
+
+    &__Content {
+      @apply text-green-800;
+    }
+
+    &__BottomBorder {
+      @apply fill-green-800;
+    }
+  }
+}
+
+// ==================== special ==================== //
+.Button--special.Button {
+  @apply outline-yellow-400;
+
+  .Card {
+    .Card__Background {
+      @apply fill-slate-400;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-yellow-400;
+    }
+
+    &__Content {
+      @apply text-yellow;
+    }
+
+    &__BottomBorder {
+      @apply fill-yellow-600;
+    }
+  }
+}
+
+.Button--special:hover.Button {
+  @apply outline-yellow-400;
+
+  .Card {
+    .Card__Background {
+      @apply fill-slate;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-yellow;
+    }
+
+    &__Content {
+      @apply text-yellow-600;
+    }
+
+    &__BottomBorder {
+      @apply fill-yellow-700;
+    }
+  }
+}
+
+.Button--special:active.Button {
+  @apply outline-yellow-400;
+
+  .Card {
+    .Card__Background {
+      @apply fill-slate-700;
+    }
+  }
+
+  .Button {
+    &__TopBorder {
+      @apply fill-yellow;
+    }
+
+    &__Content {
+      @apply text-yellow-600;
+    }
+
+    &__BottomBorder {
+      @apply fill-yellow-700;
+    }
+  }
+}
